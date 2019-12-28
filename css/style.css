@@ -1,0 +1,297 @@
+/* Global Styles */
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  min-height: 100vh;
+  min-width: 100vw;
+  line-height: 2.2rem;
+}
+
+.service-blurb-section {
+  height: 50rem;
+  width: 100vw;
+  margin-bottom: 7.5rem;
+}
+
+.service-blurb-section h4 {
+  font-size: 2em;
+}
+
+.blurb-section {
+  height: 50rem;
+  width: 100vw;
+  margin-bottom: 5rem;
+}
+
+.blurb-section h3 {
+  font-size: 2em;
+  margin-bottom: 2.5rem;
+}
+
+.blurb-section p {
+  font-size: 1.6rem;
+}
+
+.section-hr {
+  width: 7.5rem;
+  height: .3rem;
+  margin: 1.5rem auto 4.5rem;
+  background: #ff7315;
+}
+
+/* Navbar Styles */
+
+.main-nav {
+  border-top: .5rem solid #145504;
+  padding: 2rem 0;
+  font-size: 1.6rem;
+}
+
+.dropdown-menu .dropdown-item {
+  font-size: 1.6rem;
+}
+
+.navbar-brand h3 {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+/* Header Styles */
+
+.homepage-image {
+  height: 70vh;
+  width: 100vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/architecture-clouds-daylight-driveway-259588.jpg') center/cover no-repeat;
+}
+
+.header-text-container {
+  z-index: 1;
+}
+
+.header-text {
+  color: #fff;
+}
+
+.header-text h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: .3rem;
+  text-shadow: .1rem .1rem .8rem #000000;
+}
+
+/* Button Styles */
+
+.btn {
+  font-size: 1.8rem;
+}
+
+.btn-primary {
+  background: #ff7315;
+  border: .1rem solid #ff7315;
+}
+
+.btn-primary:hover {
+  background: #e8751a;
+  border: .1rem solid #e8751a;
+}
+
+.btn-primary:focus {
+    outline: 0;
+    background: #ff7315;
+    border: .1rem solid #ff7315;
+    box-shadow: none!important;
+}
+
+.quote-btn {
+  margin-top: 5rem;
+}
+
+/* Modal Styles */
+
+.modal-header h5 {
+  font-size: 2em;
+}
+
+.modal-body {
+  font-size: 1.6rem;
+}
+
+.modal-footer {
+  background: #145504;
+}
+
+/* Jumbotron Styles */
+
+.jumbotron {
+  margin-bottom: 0;
+}
+
+.display-4 {
+  font-size: 4em;
+}
+
+.lead {
+  font-size: 1.6rem;
+}
+
+/* Testimonial Styles */
+
+.blurb-header,
+.testimonial-header {
+  margin-top: 5rem;
+  font-size: 3em;
+}
+
+.service-icons {
+  height: 10rem;
+  width: 10rem;
+  margin: 3rem auto;
+}
+
+.testimonial-section {
+  height: 45rem;
+  width: 100vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/blur-bokeh-close-up-depth-of-field-572007.jpg') center/cover no-repeat scroll;
+}
+
+.testimonial-section p {
+  font-size: 1.6rem;
+}
+
+.testimonial-header {
+  color: white;
+  text-shadow: .1rem .1rem .8rem #000000;
+}
+
+.client-comments {
+  color: white;
+  text-align: center;
+  font-style: italic;
+}
+
+.client-names {
+  color: white;
+  text-align: center;
+  text-shadow: .1rem .1rem .8rem #000000;
+}
+
+.client-images {
+  padding: .1rem;
+  border: .2rem solid #ff7315;
+}
+
+.carousel-indicators li {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 100%;
+}
+
+.bbb-icon {
+  height: 15rem;
+  width: 15rem;
+  margin-bottom: 4.5rem;
+}
+
+/* Footer Styles */
+
+.footer {
+  background: #145504;
+  padding: 3rem 0;
+  color: white;
+  font-size: 1.6rem;
+}
+
+.footer p {
+  margin-bottom: 0;
+  text-shadow: .1rem .1rem .8rem #000000;
+}
+
+.footer a {
+  color: #ff7315;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+/* Media Queries */
+
+/* // Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */
+
+
+@media (min-width: 992px) {
+  .testimonial-section {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 992px) {
+  .blurb-section {
+    margin-bottom: 10rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .service-blurb-section {
+    height: 125rem;
+  }
+  .blurb-section {
+    margin-bottom: 20rem;
+  }
+}
+
+@media (max-width: 715px) {
+  .service-blurb-section {
+    height: 130rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .blurb-section {
+    margin-bottom: 30rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .testimonial-section {
+    height: 50rem;
+  }
+}
+
+@media (max-width: 336px) {
+  .service-blurb-section {
+    height: 135rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .testimonial-section {
+    height: 52rem;
+  }
+  .blurb-section {
+    margin-bottom: 40rem;
+  }
+}
